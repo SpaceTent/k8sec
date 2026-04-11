@@ -4,13 +4,13 @@
 package main
 
 import (
-    "fmt"
-    
-    v1 "k8s.io/api/core/v1"
+	"fmt"
+
+	v1 "k8s.io/api/core/v1"
 )
 
 type item struct {
-    secret v1.Secret
+	secret v1.Secret
 }
 
 func (i item) Title() string       { return i.secret.Name }

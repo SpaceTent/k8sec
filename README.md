@@ -1,6 +1,6 @@
 # k8sec
 
-`k8sec`, TUI-based Kubernetes Secret editor. It provides a user-friendly interface for listing, filtering, editing, and adding secrets in your Kubernetes cluster, all from the terminal.
+`k8sec`, Simple TUI-based Kubernetes Secret editor. It provides a user-friendly interface for listing, filtering, editing, and adding secrets in your Kubernetes cluster, all from the terminal.
 
 ## Features
 
