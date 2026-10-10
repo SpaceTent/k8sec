@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in k8sec doesn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! **Never paste real secret values** into an issue. Replace them with placeholders.
+        Security issues should be reported privately; see SECURITY.md.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. k8sec -n my-namespace
+        2. Select secret ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output / error
+      description: Terminal output or the first lines of any panic. Remove secret values.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: k8sec version
+      description: Output of `k8sec -h` (Version / BuildTime lines), or the git commit you built.
+      placeholder: v0.0.2
+    validations:
+      required: true
+  - type: input
+    id: kubernetes
+    attributes:
+      label: Kubernetes version and distribution
+      placeholder: v1.31 on EKS / kind / k3s ...
+  - type: input
+    id: env
+    attributes:
+      label: OS, terminal and $EDITOR
+      placeholder: macOS 15, iTerm2, EDITOR=vim
+    validations:
+      required: true
