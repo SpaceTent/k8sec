@@ -1,1 +1,3 @@
 bin/*
+# binary produced by a plain `go build` in the repo root
+/k8sec
